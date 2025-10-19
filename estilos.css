@@ -1,0 +1,65 @@
+html, body { 
+    height: 100%;
+    margin: 0; 
+}
+body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background: lightgray; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.calculadoraContainer {
+  width: 320px;                
+  background: white;         
+  border-radius: 10px;         
+  padding: 16px;               
+  text-align: center;
+}
+.calculadoraContainer h1 { 
+    margin: 0 0 10px 0; 
+    font-size: 20px; 
+}
+.entradas { 
+    display: flex; 
+    gap: 8px; 
+    margin-bottom: 12px;
+}
+.entradas input { 
+    flex: 1; 
+    padding: 8px; 
+    font-size: 14px; 
+    border: 1px solid gray; 
+    border-radius: 4px; 
+}
+.botones { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px; 
+    margin-bottom: 8px; 
+}
+.botones button {
+  padding: 10px; 
+  font-size: 14px; 
+  border-radius: 4px; 
+  border: 1px solid #888; 
+  cursor: pointer; 
+  color: white;
+}
+.botones button#btnSuma { background: green; }
+.botones button#btnRestar { background: red; }
+.botones button#btnMultiplicar { background: orange; }
+.botones button#btnDividir { background: purple; }
+#resultados { margin-top: 6px; font-weight: bold; }
+
+#historialContainer { 
+    margin-top: 12px; 
+    text-align: left; }
+#historial { 
+    margin: 8px 0 0 0; 
+    padding-left: 16px; 
+    max-height: 120px; 
+}
+#historial li { 
+    margin-bottom: 6px;
+}
